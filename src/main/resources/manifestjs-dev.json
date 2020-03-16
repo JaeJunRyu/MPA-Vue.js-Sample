@@ -1,0 +1,4 @@
+{
+  "mticket.main.js": "/dist/mticket.main.js?phase=dev",
+  "axios.min.js": "/dist/axios.min.js"
+}
