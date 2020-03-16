@@ -7,10 +7,9 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 
 @Configuration
-@Profile(value="dev")
-@PropertySource(value="classpath:manifestjs-dev.json", factory = JsonPropertySourceFactory.class)
-public class DevJsonProperties {
-
+@Profile(value="release")
+@PropertySource(value="classpath:manifestjs-release.json", factory = JsonPropertySourceFactory.class)
+public class ReleaseJsonProperties {
 
 
 }

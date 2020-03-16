@@ -11,4 +11,12 @@ public class DemoApplication {
     public static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
     }
+
+  @Bean
+  public static PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer() {
+    PropertySourcesPlaceholderConfigurer configurer = new PropertySourcesPlaceholderConfigurer();
+    configurer.setIgnoreUnresolvablePlaceholders(true);
+    configurer.setIgnoreResourceNotFound(true);
+    return configurer;
+  }
 }
